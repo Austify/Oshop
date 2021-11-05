@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-start">
+    <a class="navbar-brand" href="#">O</a>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a routerLink="" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="" routerLink="shopping-cart" class="nav-link">Shopping Cart</a></li>
+      <li  ngbDropdown class="nav-item dropdown">
+          <a  ngbDropdownToggle  class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Username</a>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbardDropdown">
+              <a routerLink="my-orders" class="dropdown-item">My Orders</a>
+              <a routerLink="/admin/admin-orders" class="dropdown-item">Manage Orders</a>
+              <a routerLink="/admin/admin-products" class="dropdown-item">Manage Products</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Log out</a>
+          </div>
+    </li>
+    </ul>
+  </nav>
